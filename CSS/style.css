@@ -1,1 +1,33 @@
+body{
+  color:black;
+}
 
+.debug{
+  background-color: rgba(191, 103, 212, 0.489);
+  border: 1px solid black;
+}
+
+header .navbar{
+  height: 60px;
+}
+
+.mm-container{
+  height: 100vh;
+}
+
+.mm-container .row:first-child{
+  background-color: #051E34;
+}
+
+.col-1 .nav{
+  padding-top: 70px;
+}
+
+.mm-container .row .col-1{
+  height: 100vh;
+  padding-top: 70px;
+}
+
+.input-group {
+  width: 60% !important;
+}

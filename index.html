@@ -20,18 +20,21 @@
 <body>
   <header>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  w-100 position-fixed">
       <div class="container-fluid">
-        
+
+        <!--LOGO-->
         <a class="navbar-brand" href="#">Logo</a>
-        
+
+        <!--SEARCHING BAR-->
         <div class="input-group input-group-sm">
-          <span class="input-group-text" id="inputGroup-sizing-sm">
-            <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="input-group-text"   id="inputGroup-sizing-sm">
+          <i class="fa-solid fa-magnifying-glass"></i>
           </span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+          <input type="text" class="form-control"   aria-label="Sizing example input"   aria-describedby="inputGroup-sizing-sm">
         </div>
 
+        <!--LITTLE BELL MENU-->
         <div class="d-flex">
           <div class="dropdown">
             <button type="button" class="btn btn-outline-warning">
@@ -47,10 +50,36 @@
       </div>
     </nav>
 
-
   </header>
 
-  <main></main>
+  <main>
+    <div class="mm-container w-100 debug">
+    <div class="row">
+
+      <div class="col-1">
+        <nav class="nav flex-column fixed-top">
+          <a class="nav-link text-light" href="#"> 
+            <i class="fa-solid fa-house"></i> Home</a>
+          <a class="nav-link text-light" href="#">
+            <i class="fa-solid fa-chart-simple"></i> Stats</a>
+          <a class="nav-link text-light" href="#">
+            <i class="fa-solid fa-signal"></i> Signals</a>
+        </nav>
+
+        <div class="fixed-bottom p-3">
+          <a class="text-decoration-none text-light" href="#">
+            <i class="fa-solid fa-gear"></i> Admin
+          </a>
+        </div>
+      </div>
+
+      <div class="col-11 bg-secondary">
+        <p>column not fixed</p>
+      </div>
+    </div>
+    </div>
+
+  </main>
 
   <footer></footer>
 </body>
