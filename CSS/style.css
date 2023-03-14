@@ -3,7 +3,7 @@ body{
 }
 
 .debug{
-  background-color: rgba(191, 103, 212, 0.489);
+  background-color: rgba(180, 133, 184, 0.489);
   border: 1px solid black;
 }
 
@@ -17,17 +17,36 @@ header .navbar{
 
 .mm-container .row:first-child{
   background-color: #051E34;
+  background-image: url(../img/sidebar-bg.png);
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
-.col-1 .nav{
-  padding-top: 70px;
+.col-1 .nav,
+.col-11{
+  padding-top: 60px;
 }
 
 .mm-container .row .col-1{
   height: 100vh;
-  padding-top: 70px;
 }
 
 .input-group {
   width: 60% !important;
 }
+
+.mm-container .top-bar{
+  background-color: #1B72E8;
+  height: 15vh;
+  width: 100%;
+}
+
+.row{
+  --bs-gutter-x: 0 !important;
+  width: 100%;
+}
+
+
+
+
+

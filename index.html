@@ -9,11 +9,10 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css' integrity='sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==' crossorigin='anonymous'/>
 
   <!--bootstrap-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
 <!--java inserito alla fine del doc-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.  0-alpha1/dist/js/bootstrap.bundle.min.js"   integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB  +EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
   <title>Bootstrap Dashboard</title>
 </head>
@@ -56,6 +55,7 @@
     <div class="mm-container w-100 debug">
     <div class="row">
 
+      <!--sidebar-->
       <div class="col-1">
         <nav class="nav flex-column fixed-top">
           <a class="nav-link text-light" href="#"> 
@@ -73,8 +73,26 @@
         </div>
       </div>
 
-      <div class="col-11 bg-secondary">
-        <p>column not fixed</p>
+      <!--top-bar-->
+      <div class="col-11 bg-warning-subtle">
+        <div class="mm-container">
+          <div class="top-bar d-flex align-items-center text-white">
+            <div class="row">
+              <div class="col-4 debug">
+                <h4>Boolean</h4>
+                
+              </div>
+              <div class="col-4 debug">
+                <span>Studenti online negli ultimi 30 min</span> <br>
+                <span class="fs-2 text">125</span>
+              </div>
+              
+              <div class="col-4 debug">
+                Nuovo studente
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     </div>
