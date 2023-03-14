@@ -11,8 +11,7 @@
   <!--bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-  <!--java inserito alla fine del doc-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.  0-alpha1/dist/js/bootstrap.bundle.min.js"   integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB  +EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
 
   <title>Bootstrap Dashboard</title>
 </head>
@@ -59,7 +58,7 @@
   
         <!--sidebar-->
         <div class="col-1">
-        <nav class="nav flex-column fixed-top">
+        <nav class="nav flex-column">
           <a class="nav-link text-light" href="#"> 
             <i class="fa-solid fa-house"></i> Home</a>
           <a class="nav-link text-light" href="#">
@@ -84,23 +83,95 @@
                   <h4>Boolean</h4>
                 </div>
                 <div class="col-4 debug">
-                  <span>Studenti online negli ultimi 30 min</  span> <br>
+                  <span>Studenti online negli ultimi 30 minuti
+                  </span> <br>
                   <span class="fs-2 text">125</span>
                 </div>
                 
                 <div class="col-4 debug">
                   Nuovo studente
                   
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><button class="dropdown-item" type="button">Action</button></li>
-                      <li><button class="dropdown-item" type="button">Another action</button></li>
-                      <li><button class="dropdown-item" type="button">Something else here</button></li>
-                    </ul>
+                  <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class="fa-regular fa-plus"></i>
+                  </button>
+
+                  <div class="offcanvas offcanvas-end" tabindex="-1"                   id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    
+                    <button type="button" class="btn-close"                   data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
+
+                  <form>
+
+                    <div class="section1 d-flex">
+                      <div class="mb-3">
+                      <label for="name" class="form-label">Nome</label>
+                      <input type="text" class="form-control" id="name">
+                    </div>
+                    
+                      <div class="mb-3">
+                      <label for="surname" class="form-label">Cognome</label>
+                      <input type="text" class="form-control" id="surname">
+                    </div>
+                    </div>
+                    
+
+                    <div class="section2 d-flex">
+                      <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                      <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    </div>
+                    
+                    
+                    <!--colonna da tre-->
+                    <div class="section3 d-flex">
+                      <div class="mb-3">
+                      <label for="country" class="form-label">Città</label>
+                      <input type="text" class="form-control" id="country">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="stato" class="form-label" >
+                        Stato
+                      </label>
+                      <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Scegli...</option>
+                        <option value="1">Italia</option>
+                        <option value="2">Francia</option>
+                        <option value="3">Spagna</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="cap" class="form-label">CAP</label>
+                      <input type="text" class="form-control" id="cap">
+                    </div>
+                    </div>
+                    
+                      
+                    <!--foto-->
+                    <div class="mb-3">
+                      <label for="formFile" class="form-label">Foto</label>
+                      <input class="form-control" type="file" id="formFile">
+                    </div>
+                    
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Invia</button>
+                  </form>
+
+
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -112,5 +183,8 @@
   </main>
 
   <footer></footer>
+  <!--java inserito alla fine del doc-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
