@@ -79,17 +79,18 @@
           <div class="mm-container">
             <div class="top-bar d-flex align-items-center   text-white">
               <div class="row">
-                <div class="col-4 debug">
+                <div class="col-4">
                   <h4>Boolean</h4>
                 </div>
-                <div class="col-4 debug">
+                <div class="col-4">
                   <span>Studenti online negli ultimi 30 minuti
                   </span> <br>
                   <span class="fs-2 text">125</span>
                 </div>
                 
-                <div class="col-4 debug">
+                <div class="col-4">
                   Nuovo studente
+                  
                   
                   <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                     <i class="fa-regular fa-plus"></i>
@@ -97,7 +98,7 @@
 
                   <div class="offcanvas offcanvas-end" tabindex="-1"                   id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                   <div class="offcanvas-header">
-                    
+                    <h5>Inserisci un nuovo studente</h5>
                     <button type="button" class="btn-close"                   data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
 
@@ -157,16 +158,27 @@
                     
                       
                     <!--foto-->
-                    <div class="mb-3">
+                    <div class="section4">
+                      <div class="mb-3">
                       <label for="formFile" class="form-label">Foto</label>
                       <input class="form-control" type="file" id="formFile">
+                      </div>
                     </div>
                     
-                    <div class="mb-3 form-check">
+                    <div class="section5">
+                      <div class="mb-3 form-check">
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                       <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Invia</button>
+                    </div>
+                  
+                    <div class="section6 d-flex">
+                      <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Invia</button>
+                        <button type="button" class="btn btn-warning">Svuota</button>
+                      </div>
+                    </div>
+                    
                   </form>
 
 

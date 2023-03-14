@@ -15,10 +15,10 @@ header .navbar{
   height: 100vh;
 }
 
-.mm-container .row:first-child{
+.mm-container .col-1{
   background-color: #051E34;
   background-image: url(../img/sidebar-bg.png);
-  background-size:contain;
+  background-size:cover;
   background-repeat: no-repeat;
 }
 
@@ -35,7 +35,7 @@ header .navbar{
   width: 60% !important;
 }
 
-.mm-container .top-bar{
+.mm-container .top-bar .row{
   background-color: #1B72E8;
   height: 15vh;
   width: 100%;
@@ -44,6 +44,14 @@ header .navbar{
 .row{
   --bs-gutter-x: 0 !important;
   width: 100%;
+}
+
+.offcanvas{
+  width: 40% !important;
+}
+
+.mb-3{
+  margin: 20px;
 }
 
 
