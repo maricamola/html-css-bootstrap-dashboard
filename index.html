@@ -37,13 +37,13 @@
         <!--LITTLE BELL MENU-->
         <div class="d-flex">
           <div class="dropdown">
-            <button type="button" class="btn btn-outline-warning">
-              <i class="fa-solid fa-bell"></i>
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><button class="dropdown-item" type="button">Action</button></li>
+              <li><button class="dropdown-item" type="button">Another action</button></li>
+              <li><button class="dropdown-item" type="button">Something else here</button></li>
             </ul>
           </div>
         </div>
@@ -56,7 +56,27 @@
   
         <!--sidebar-->
         <div class="mm-container debug">
-          <div class="sidebar d-flex flex-column justify-content-between">
+
+          <!--mobile-->
+          <div class="sidebar d-flex flex-column justify-content-between d-md-none">
+            <nav class="nav flex-column">
+              <a class="nav-link text-light" href="#"> 
+                <i class="fa-solid fa-house"></i></a>
+              <a class="nav-link text-light" href="#">
+                <i class="fa-solid fa-chart-simple"></i></a>
+              <a class="nav-link text-light" href="#">
+                <i class="fa-solid fa-signal"></i></a>
+            </nav>
+    
+            <div class="p-3">
+              <a class="text-decoration-none text-light" href="#">
+                <i class="fa-solid fa-gear"></i> 
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--desktop-->
+          <div class="sidebar w-10 d-flex flex-column justify-content-between d-none d-md-flex">
             <nav class="nav flex-column">
               <a class="nav-link text-light" href="#"> 
                 <i class="fa-solid fa-house"></i> Home</a>
@@ -189,18 +209,135 @@
           <div class="section1 d-flex">
             <div class="row">
               <div class="col-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nemo ut laboriosam rem ullam laudantium laborum quos sunt reiciendis perspiciatis! Modi ratione soluta vel saepe ex doloribus commodi voluptatum dolorum doloremque, aliquid nam, eaque sit nisi repellendus numquam. Illo voluptates explicabo rerum perferendis saepe atque sequi officia quae id aperiam asperiores modi repudiandae ab, voluptas repellat earum autem quam dolor sint aspernatur itaque aut. Ea ad similique quos vel unde aut cupiditate facere, ratione perspiciatis quisquam! Dignissimos cumque, quasi perferendis repudiandae explicabo numquam at, consectetur ipsam in pariatur deleniti eum optio obcaecati nobis dolores quam harum. Non at cumque quae!
+                <div class="row flex-column">
+                  <div class="col debug">
+                    <h4>PROSSIME CLASSI</h4></div>
+                  <div class="col">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Nome</th>
+                          <th scope="col">Data inizio</th>
+                          <th scope="col">ROI</th>
+                          <th scope="col">Stato</th>
+                          <th scope="col">Azioni</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Classe 75</th>
+                          <td>15 Feb 2021</td>
+                          <td>20%</td>
+                          <td><span class="green">Done</span></td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Classe 76</th>
+                          <td>15 Feb 2021</td>
+                          <td>20%</td>
+                          <td> <span class="green">Done</span> </td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Classe 77</th>
+                          <td>15 Feb 2021</td>
+                          <td>20%</td>
+                          <td><span class="red">falled</span></td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Classe 78</th>
+                          <td>15 Feb 2021</td>
+                          <td>20%</td>
+                          <td><span class="green">Done</span></td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Classe 79</th>
+                          <td>15 Feb 2021</td>
+                          <td>20%</td>
+                          <td><span class="red">falled</span></td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Classe 80</th>
+                          <td>15 Feb 2021</td>
+                          <td>20%</td>
+                          <td><span class="red">falled</span></td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Classe 81</th>
+                          <td>15 Feb 2021</td>
+                          <td>20%</td>
+                          <td> <span class="green">Done</span> </td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Classe 82</th>
+                          <td>15 Feb 2021</td>
+                          <td>20%</td>
+                          <td><span class="green">Done</span></td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem">
+                              <i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
 
               <div class="col-4">Veritatis ipsam maxime quo voluptas fugiat asperiores totam a minima aspernatur delectus mollitia ullam repellat vel eaque ducimus, voluptatum officia quaerat. Similique aut eius excepturi ipsa sint consequatur nihil.</div>
             </div>
           </div>
 
-          <div class="section2">
+          <div class="section2 d-flex">
             <div class="row">
               <div class="col-8">
+                Veritatis ipsam maxime quo voluptas fugiat asperiores totam a minima aspernatur delectus mollitia ullam repellat vel eaque ducimus, voluptatum officia quaerat. Similique aut eius excepturi ipsa sint consequatur nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam esse ratione quo labore dignissimos tempora?
               </div>
-              <div class="col-4"></div>
+              <div class="col-4">
+                <img class="w-100" src="img/stats.jpeg" alt="stats">
+              </div>
             </div>
           </div>
         </div>
