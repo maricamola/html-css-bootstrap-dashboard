@@ -53,32 +53,33 @@
   </header>
 
   <main>
-    <div class="mm-container w-100 debug">
-      <div class="row">
   
         <!--sidebar-->
-        <div class="col-1">
-        <nav class="nav flex-column">
-          <a class="nav-link text-light" href="#"> 
-            <i class="fa-solid fa-house"></i> Home</a>
-          <a class="nav-link text-light" href="#">
-            <i class="fa-solid fa-chart-simple"></i> Stats</a>
-          <a class="nav-link text-light" href="#">
-            <i class="fa-solid fa-signal"></i> Signals</a>
-        </nav>
+        <div class="mm-container debug">
+          <div class="sidebar d-flex flex-column justify-content-between">
+            <nav class="nav flex-column">
+              <a class="nav-link text-light" href="#"> 
+                <i class="fa-solid fa-house"></i> Home</a>
+              <a class="nav-link text-light" href="#">
+                <i class="fa-solid fa-chart-simple"></i> Stats</a>
+              <a class="nav-link text-light" href="#">
+                <i class="fa-solid fa-signal"></i> Signals</a>
+            </nav>
+    
+            <div class="p-3">
+              <a class="text-decoration-none text-light" href="#">
+                <i class="fa-solid fa-gear"></i> Admin
+              </a>
+            </div>
+          </div>
+        </div>
 
-        <div class="fixed-bottom p-3">
-          <a class="text-decoration-none text-light" href="#">
-            <i class="fa-solid fa-gear"></i> Admin
-          </a>
-        </div>
-        </div>
-  
         <!--top-bar-->
-        <div class="col-11 bg-warning-subtle">
-          <div class="mm-container">
+        <div class="mm-container debug">
+          <div class="content debug">
             <div class="top-bar d-flex align-items-center   text-white">
-              <div class="row">
+              
+              <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-4">
                   <h4>Boolean</h4>
                 </div>
@@ -95,15 +96,15 @@
                   <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                     <i class="fa-regular fa-plus"></i>
                   </button>
-
+    
                   <div class="offcanvas offcanvas-end" tabindex="-1"                   id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                   <div class="offcanvas-header">
                     <h5>Inserisci un nuovo studente</h5>
                     <button type="button" class="btn-close"                   data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
-
+    
                   <form>
-
+    
                     <div class="section1 d-flex">
                       <div class="mb-3">
                       <label for="name" class="form-label">Nome</label>
@@ -116,20 +117,18 @@
                     </div>
                     </div>
                     
-
                     <div class="section2 d-flex">
                       <div class="mb-3">
                       <label for="email" class="form-label">Email</label>
                       <span class="input-group-text" id="basic-addon1">@</span>
                       <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
-
+    
                     <div class="mb-3">
                       <label for="exampleInputPassword1" class="form-label">Password</label>
                       <input type="password" class="form-control" id="exampleInputPassword1">
                     </div>
                     </div>
-                    
                     
                     <!--colonna da tre-->
                     <div class="section3 d-flex">
@@ -137,7 +136,7 @@
                       <label for="country" class="form-label">Città</label>
                       <input type="text" class="form-control" id="country">
                     </div>
-
+    
                     <div class="mb-3">
                       <label for="stato" class="form-label" >
                         Stato
@@ -149,14 +148,13 @@
                         <option value="3">Spagna</option>
                       </select>
                     </div>
-
+    
                     <div class="mb-3">
                       <label for="cap" class="form-label">CAP</label>
                       <input type="text" class="form-control" id="cap">
                     </div>
                     </div>
                     
-                      
                     <!--foto-->
                     <div class="section4">
                       <div class="mb-3">
@@ -180,17 +178,33 @@
                     </div>
                     
                   </form>
-
-
+    
+    
                   </div>
-
+    
                 </div>
               </div>
             </div>
+
+          <div class="section1 d-flex">
+            <div class="row">
+              <div class="col-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nemo ut laboriosam rem ullam laudantium laborum quos sunt reiciendis perspiciatis! Modi ratione soluta vel saepe ex doloribus commodi voluptatum dolorum doloremque, aliquid nam, eaque sit nisi repellendus numquam. Illo voluptates explicabo rerum perferendis saepe atque sequi officia quae id aperiam asperiores modi repudiandae ab, voluptas repellat earum autem quam dolor sint aspernatur itaque aut. Ea ad similique quos vel unde aut cupiditate facere, ratione perspiciatis quisquam! Dignissimos cumque, quasi perferendis repudiandae explicabo numquam at, consectetur ipsam in pariatur deleniti eum optio obcaecati nobis dolores quam harum. Non at cumque quae!
+              </div>
+
+              <div class="col-4">Veritatis ipsam maxime quo voluptas fugiat asperiores totam a minima aspernatur delectus mollitia ullam repellat vel eaque ducimus, voluptatum officia quaerat. Similique aut eius excepturi ipsa sint consequatur nihil.</div>
+            </div>
+          </div>
+
+          <div class="section2">
+            <div class="row">
+              <div class="col-8">
+              </div>
+              <div class="col-4"></div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+
 
   </main>
 
